@@ -1,5 +1,5 @@
 # returns true for a valid position on an empty board
-# returns nil or false for an occupied position = !position_taken?
+# returns nil or false for an occupied position
 def valid_move?(board, index)
   index.between?(0,8) && !position_taken?(board, index)
 end
