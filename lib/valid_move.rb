@@ -1,4 +1,18 @@
-# code your #valid_move? method here
+# returns true for a valid position on an empty board
+# returns nil or false for an occupied position = !position_taken?
+def valid_move?(board, index)
+  index.between?(0,8) && !position_taken?(board, index)
+end
 
-
-# re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
+# accepts a board and the index to check as arguments
+# returns false if the board has an empty string " " in the desired index
+# returns false if the board has an empty string "" in the index
+# returns false if the board has nil in the index
+# returns true if the board has a value of "X" or "O" in the index
+def position_taken?(board, index)
+  if board[index] == " " || board[index] == "" || board[index] == nil
+      taken = false
+    elsif board[index] == "X" || board[index] == "O"
+      taken = true
+    end
+end
