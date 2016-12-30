@@ -26,3 +26,10 @@ elsif board[index] == "X" || board[index] == "O"
 end
 
 end
+
+# # other ways
+# def position_taken?(board,position)
+#   return false if [" ", "", nil].include?(board[position])
+#   return true if ["X", "O"].include?(board[position])
+# 
+# end
