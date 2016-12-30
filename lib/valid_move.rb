@@ -1,8 +1,8 @@
 # code your #valid_move? method here
 def valid_move?(board, position)
 
-position.between?(0,8) and not position_taken?(board, position)
-
+position.between?(0,8) && !position_taken?(board, position)
+#position.between?(0,8) and not position_taken?(board, position)
 
 end
 
@@ -31,5 +31,5 @@ end
 # def position_taken?(board,position)
 #   return false if [" ", "", nil].include?(board[position])
 #   return true if ["X", "O"].include?(board[position])
-# 
+#
 # end
