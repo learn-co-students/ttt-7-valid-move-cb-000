@@ -1,7 +1,4 @@
 # code your #valid_move? method here
-board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
-index = 4
-
 def valid_move?(board, index)
   if (index < 0 || index > 8)
       puts "You must move to a position within the tic tac toe board."
@@ -25,5 +22,3 @@ def position_taken?(board, index)
     return true
   end
 end
-
-#valid_move(board, index)
