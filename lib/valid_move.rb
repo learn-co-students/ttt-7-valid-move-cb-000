@@ -1,4 +1,17 @@
-# code your #valid_move? method here
+def valid_move?(board, index)
+  if position_valid?(board, index)
+    true
+  else
+    false
+  end
+end
 
-
-# re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
+def position_valid?(board, index)
+  if index > 9
+    false
+  elsif board[index] == " " || board[index] == "" || board[index] == nil
+    true
+  else
+    false
+  end
+end
