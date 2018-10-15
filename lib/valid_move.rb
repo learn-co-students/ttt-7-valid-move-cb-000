@@ -1,4 +1,6 @@
 # code your #valid_move? method here
+#checking if index is between 0 & 8, and if the position is not taken => considered a valid move
+
 def valid_move?(board, index)
   if (index.between?(0,8) && position_taken?(board,index) == false )
     true
