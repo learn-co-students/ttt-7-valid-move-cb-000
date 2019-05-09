@@ -1,4 +1,17 @@
-# code your #valid_move? method here
+board = [" "," "," "," "," "," "," "," "," "] #this is an array
 
+def position_taken?(board,index)
+if (board[index] == " " || board[index] == "" || board[index] == nil)
+    return FALSE
+  else
+    return TRUE 
+end
+end
 
-# re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
+def valid_move? (board, index)
+if board[index] == "X" || board[index] == "O" || index == 100
+  return FALSE
+else
+  return TRUE
+end
+end
